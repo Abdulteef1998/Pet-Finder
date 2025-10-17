@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/pets/presentation/screens/splash_screen.dart';
+import 'package:pet_finder/features/pets/presentation/widgets/search_bar.dart';
 
 void main() {
   runApp(const PetFinderApp());
@@ -14,7 +14,7 @@ class PetFinderApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'PetFinder App',
       theme: ThemeData(primarySwatch: Colors.indigo),
-      home: const SplashScreen(),
+      home: const PetApp(),
     );
   }
 }
