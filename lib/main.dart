@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_finder/features/pets/presentation/widgets/search_bar.dart';
+import 'package:pet_finder/features/pets/presentation/screens/splash_screen.dart';
 
 void main() {
   runApp(const PetFinderApp());
