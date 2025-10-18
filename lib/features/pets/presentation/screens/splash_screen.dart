@@ -15,6 +15,9 @@ class PetApp extends StatelessWidget {
   }
 }
 
+/// ======================
+/// 🐾 Splash Screen
+/// ======================
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -39,19 +42,53 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: 203,
           height: 181,
-
-          child: Center(
-            child: SvgPicture.asset(
-              'assets/heart.svg',
-              width: 203,
-              height: 181,
-            ),
-          ),
+          child: SvgPicture.asset('assets/heart.svg', width: 203, height: 181),
         ),
       ),
     );
   }
 }
+
+// class SplashScreen extends StatefulWidget {
+//   const SplashScreen({super.key});
+
+//   @override
+//   State<SplashScreen> createState() => _SplashScreenState();
+// }
+
+// class _SplashScreenState extends State<SplashScreen> {
+//   @override
+//   void initState() {
+//     super.initState();
+//     Future.delayed(const Duration(seconds: 3), () {
+//       Navigator.pushReplacement(
+//         context,
+//         MaterialPageRoute(builder: (_) => const OnboardingScreen()),
+//       );
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.white,
+//       body: Center(
+//         child: Container(
+//           width: 203,
+//           height: 181,
+
+//           child: Center(
+//             child: SvgPicture.asset(
+//               'assets/heart.svg',
+//               width: 203,
+//               height: 181,
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
